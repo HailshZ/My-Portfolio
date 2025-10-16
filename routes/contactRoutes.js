@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransporter({
 });
 
 // Contact form endpoint
-router.post('/contact', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
 

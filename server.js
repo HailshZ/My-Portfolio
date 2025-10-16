@@ -6,6 +6,7 @@ require('dotenv').config();
 // Import security middleware
 const { securityMiddleware, limiter } = require('./middleware/security');
 const portfolioRoutes = require('./routes/portfolioRoutes');
+const contactRoutes = require('./routes/contactRoutes'); // Added contact routes
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -38,6 +39,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/portfolio', portfolioRoutes);
+app.use('/api/contact', contactRoutes); // Added contact routes
 
 // Health check route with database status
 app.get('/health', async (req, res) => {
@@ -76,7 +78,8 @@ app.get('/', (req, res) => {
             education: '/api/portfolio/education',
             skills: '/api/portfolio/skills',
             projects: '/api/portfolio/projects',
-            certificates: '/api/portfolio/certificates'
+            certificates: '/api/portfolio/certificates',
+            contact: '/api/contact' // Added contact endpoint
         }
     });
 });
@@ -107,4 +110,5 @@ app.listen(PORT, () => {
     console.log(`🌐 Access the API at: http://localhost:${PORT}`);
     console.log(`🔍 Health check: http://localhost:${PORT}/health`);
     console.log(`📊 API status: http://localhost:${PORT}/api/portfolio/personal-info`);
+    console.log(`📧 Contact endpoint: http://localhost:${PORT}/api/contact`); // Added contact endpoint log
 });
