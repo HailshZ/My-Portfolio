@@ -77,6 +77,7 @@ app.get('/', (req, res) => {
             personalInfo: '/api/portfolio/personal-info',
             education: '/api/portfolio/education',
             skills: '/api/portfolio/skills',
+            experience: '/api/portfolio/experience',
             projects: '/api/portfolio/projects',
             certificates: '/api/portfolio/certificates',
             contact: '/api/contact' // Added contact endpoint

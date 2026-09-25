@@ -8,6 +8,7 @@ const router = express.Router();
 router.get('/personal-info', PortfolioController.getPersonalInfo);
 router.get('/education', PortfolioController.getEducation);
 router.get('/skills', PortfolioController.getSkills);
+router.get('/experience', PortfolioController.getExperience);
 router.get('/projects', PortfolioController.getProjects);
 router.get('/certificates', PortfolioController.getCertificates);
 

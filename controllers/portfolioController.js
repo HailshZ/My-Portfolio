@@ -81,6 +81,22 @@ class PortfolioController {
     }
   }
 
+  static async getExperience(req, res) {
+    try {
+      const experience = await PortfolioModel.getExperience();
+      res.json({
+        success: true,
+        data: experience
+      });
+    } catch (error) {
+      console.error('Error fetching experience:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Error fetching experience'
+      });
+    }
+  }
+
   static async getCertificates(req, res) {
     try {
       const certificates = await PortfolioModel.getCertificates();
