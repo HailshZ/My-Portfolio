@@ -80,7 +80,7 @@ INSERT INTO projects (title, description, technologies, project_url, github_url,
 
 -- Insert certificates data
 INSERT INTO certificates (title, issuing_organization, issue_date, credential_url, certificate_image_url, sort_order) VALUES
-('4th Cyber Talent Summer Camp Program', 'Information Network Security Administration (INSA) & AASTU', 'October 2025', NULL, '/certificates/insa-cyber-talent-summer-camp-2025.jpg', 1),
+('4th Cyber Talent Summer Camp Program', 'Information Network Security Administration (INSA) & AASTU', 'October 2025', NULL, 'https://plkrxfbsszdaqwxssicx.supabase.co/storage/v1/object/public/certificates/cybersecurity.jpg', 1),
 ('Ethiopia Cyber Shield 2026 - Intensive CTF', 'Ethiopia Cyber Shield 2026', 'Certificate pending', NULL, NULL, 2),
 ('Computer Maintenance & Networking', 'Satcom Institute of Technology', 'September 2025', NULL, 'https://plkrxfbsszdaqwxssicx.supabase.co/storage/v1/object/public/certificates/computer-networking.jpg', 3),
 ('Graphic Design', 'Berhanena Selam Printing Technology College', 'April 2022', NULL, 'https://plkrxfbsszdaqwxssicx.supabase.co/storage/v1/object/public/certificates/berhanena-selam.jpg', 4);

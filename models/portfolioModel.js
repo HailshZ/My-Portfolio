@@ -240,7 +240,7 @@ const fallbackData = {
       issuing_organization: 'Information Network Security Administration (INSA) & AASTU',
       issue_date: 'October 2025',
       credential_url: null,
-      certificate_image_url: '/certificates/insa-cyber-talent-summer-camp-2025.jpg'
+      certificate_image_url: 'https://plkrxfbsszdaqwxssicx.supabase.co/storage/v1/object/public/certificates/cybersecurity.jpg'
     },
     {
       id: 2,
