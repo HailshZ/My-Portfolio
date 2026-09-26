@@ -19,7 +19,7 @@ const fallbackData = {
     telegram_username: '@Fortofiglio',
     personal_statement: personalStatement,
     profile_picture_url: '/images/profile.jpg',
-    resume_url: null,
+    resume_url: '/Hailemariam_Zeleke_CV.pdf',
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString()
   },

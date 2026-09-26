@@ -32,6 +32,7 @@ Knowing how applications are built makes me better at finding where they break, 
     location = 'Addis Ababa, Ethiopia',
     linkedin_url = 'https://www.linkedin.com/in/hailemariam-zeleke-38178329a',
     profile_picture_url = '/images/profile.jpg',
+    resume_url = '/Hailemariam_Zeleke_CV.pdf',
     updated_at = NOW()
 WHERE id = 1;
 

@@ -1,6 +1,6 @@
 -- Insert personal information
 INSERT INTO personal_info (
-    phone, email, location, linkedin_url, github_url, telegram_username, personal_statement, profile_picture_url
+    phone, email, location, linkedin_url, github_url, telegram_username, personal_statement, profile_picture_url, resume_url
 ) VALUES (
     '+251961109553',
     'hailemariamzeleke21@gmail.com',
@@ -13,7 +13,8 @@ INSERT INTO personal_info (
 I''m currently a Cybersecurity and Digital Risk Management trainee at the AAU Qiyas Project, getting hands-on with Blue Team and Red Team operations: SIEM, threat intelligence, incident response, penetration testing, Linux and server administration, and secure SDLC / DevSecOps monitoring. Before that, I took part in INSA''s 4th Cyber Talent Summer Camp, where I built a Python/Flask web vulnerability scanner, and completed a project-based cybersecurity internship with CodeAlpha.
 
 Knowing how applications are built makes me better at finding where they break, and knowing how they break makes me write safer code. I''m looking for an entry-level role in cybersecurity or secure web development where I can contribute from day one and keep growing.',
-    '/images/profile.jpg'
+    '/images/profile.jpg',
+    '/Hailemariam_Zeleke_CV.pdf'
 );
 
 -- Insert education data
