@@ -3,8 +3,8 @@ const db = require('../config/database');
 // Fallback data in case database is unavailable
 const personalStatement = [
   "I'm a Computer Science graduate (CGPA 3.99) who works on both sides of the web: I build full-stack applications with React, Node.js, Express and PostgreSQL, and I test and secure them as an ethical hacker.",
-  "I'm currently a Cybersecurity and Digital Risk Management trainee at the AAU Qiyas Project, getting hands-on with Blue Team and Red Team operations: SIEM, threat intelligence, incident response, penetration testing, Linux and server administration, and secure SDLC / DevSecOps monitoring. Before that, I took part in INSA's 4th Cyber Talent Summer Camp, where I built a Python/Flask web vulnerability scanner, and completed a project-based cybersecurity internship with CodeAlpha.",
-  "Knowing how applications are built makes me better at finding where they break, and knowing how they break makes me write safer code. I'm looking for an entry-level role in cybersecurity or secure web development where I can contribute from day one and keep growing."
+  "I recently completed the Cybersecurity and Digital Risk Management program at the AAU Qiyas Project, working hands-on across Blue Team and Red Team operations: SIEM, threat intelligence, incident response, penetration testing, Linux and server administration, and secure SDLC / DevSecOps monitoring. Before that, I took part in INSA's 4th Cyber Talent Summer Camp, where I built a Python/Flask web vulnerability scanner, and completed a project-based cybersecurity internship with CodeAlpha.",
+  "Knowing how applications are built makes me better at finding where they break, and knowing how they break makes me write safer code. I'm looking for a role in cybersecurity or secure web development where I can contribute from day one."
 ].join('\n\n');
 
 // Fallback data in case database is unavailable
@@ -104,12 +104,12 @@ const fallbackData = {
     {
       id: 1,
       organization: 'AAU Qiyas Project',
-      role: 'Cybersecurity & Digital Risk Management Trainee',
-      type: 'Training',
+      role: 'Cybersecurity & Digital Risk Management Program',
+      type: 'Completed',
       track: 'security',
-      period: 'Jul 2026 - Present',
+      period: 'Jul 2026 - Sep 2026',
       location: 'Addis Ababa, Ethiopia',
-      description: 'Intensive hands-on training across Blue Team and Red Team security operations.',
+      description: 'Intensive professional program covering Blue Team and Red Team security operations.',
       highlights: [
         'Blue Team and SIEM operations, threat intelligence and incident response',
         'Red Team operations and penetration testing of web and network targets',
@@ -120,16 +120,14 @@ const fallbackData = {
     {
       id: 2,
       organization: 'Ethiopian CyberShield 2026',
-      role: 'Participant - Hack. Hunt. Harden.',
-      type: 'Competition',
+      role: 'National Cybersecurity Exercise',
+      type: 'Certified',
       track: 'security',
       period: 'Sep 17 - 20, 2026',
       location: 'Addis Ababa, Ethiopia',
       description: 'Four-day national cybersecurity event hosted by ALX Ethiopia, SecureLabs, Yekolo Temari and Gundan.',
       highlights: [
-        'Hands-on system hardening across all four days',
-        'Red Team attack challenges',
-        'Incident response exercises'
+        'Completed four days of hands-on system hardening, Red Team operations and incident response exercises'
       ]
     },
     {
@@ -150,15 +148,15 @@ const fallbackData = {
     {
       id: 4,
       organization: 'Information Network Security Administration (INSA)',
-      role: '4th Cyber Talent Summer Camp - Challenge Participant',
+      role: '4th Cyber Talent Summer Camp Program',
       type: 'Program',
       track: 'security',
       period: 'Summer 2025',
       location: 'Addis Ababa, Ethiopia',
       description: 'National cybersecurity talent program run by INSA in collaboration with AASTU.',
       highlights: [
-        'Worked through offensive and defensive security challenges in lab environments',
-        'Final project: a Python/Flask web vulnerability scanner for automated testing and reporting'
+        'Completed offensive and defensive security modules in lab environments',
+        'Developed a Python/Flask web vulnerability scanner as the final project'
       ]
     }
   ],
