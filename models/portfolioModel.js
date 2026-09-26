@@ -119,6 +119,21 @@ const fallbackData = {
     },
     {
       id: 2,
+      organization: 'Ethiopian CyberShield 2026',
+      role: 'Participant - Hack. Hunt. Harden.',
+      type: 'Competition',
+      track: 'security',
+      period: 'Sep 17 - 20, 2026',
+      location: 'Addis Ababa, Ethiopia',
+      description: 'Four-day national cybersecurity event hosted by ALX Ethiopia, SecureLabs, Yekolo Temari and Gundan.',
+      highlights: [
+        'Hands-on system hardening across all four days',
+        'Red Team attack challenges',
+        'Incident response exercises'
+      ]
+    },
+    {
+      id: 3,
       organization: 'CodeAlpha',
       role: 'Cybersecurity Intern',
       type: 'Internship',
@@ -133,7 +148,7 @@ const fallbackData = {
       ]
     },
     {
-      id: 3,
+      id: 4,
       organization: 'Information Network Security Administration (INSA)',
       role: '4th Cyber Talent Summer Camp - Challenge Participant',
       type: 'Program',
@@ -244,11 +259,11 @@ const fallbackData = {
     },
     {
       id: 2,
-      title: 'Ethiopia Cyber Shield 2026 - Intensive CTF',
-      issuing_organization: 'Ethiopia Cyber Shield 2026',
-      issue_date: 'Certificate pending',
+      title: 'Ethiopian CyberShield 2026',
+      issuing_organization: 'ALX Ethiopia, SecureLabs, Yekolo Temari & Gundan',
+      issue_date: 'September 2026',
       credential_url: null,
-      certificate_image_url: null
+      certificate_image_url: '/certificates/ethiopian-cybershield-2026.jpg'
     },
     {
       id: 3,

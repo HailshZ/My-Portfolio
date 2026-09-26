@@ -84,8 +84,9 @@ INSERT INTO skills (category, skill_name, proficiency_level) VALUES
 DELETE FROM experience;
 INSERT INTO experience (organization, role, type, track, period, location, description, highlights, sort_order) VALUES
 ('AAU Qiyas Project', 'Cybersecurity & Digital Risk Management Trainee', 'Training', 'security', 'Jul 2026 - Present', 'Addis Ababa, Ethiopia', 'Intensive hands-on training across Blue Team and Red Team security operations.', ARRAY['Blue Team and SIEM operations, threat intelligence and incident response', 'Red Team operations and penetration testing of web and network targets', 'Linux and server administration; VLAN, VPN and routing', 'Digital risk management, GRC, and secure SDLC / DevSecOps monitoring']::TEXT[], 1),
-('CodeAlpha', 'Cybersecurity Intern', 'Internship', 'security', '2026 (project-based)', 'Remote', 'Project-based cybersecurity internship with practical, documented tasks.', ARRAY['Built a Python network packet sniffer with Scapy to capture and inspect live traffic', 'Performed a secure code review of a Flask app, finding SQL injection, XSS, hardcoded credentials and insecure deserialization with manual review and Bandit (SAST)', 'Documented findings and secure-coding fixes on GitHub']::TEXT[], 2),
-('Information Network Security Administration (INSA)', '4th Cyber Talent Summer Camp - Challenge Participant', 'Program', 'security', 'Summer 2025', 'Addis Ababa, Ethiopia', 'National cybersecurity talent program run by INSA in collaboration with AASTU.', ARRAY['Worked through offensive and defensive security challenges in lab environments', 'Final project: a Python/Flask web vulnerability scanner for automated testing and reporting']::TEXT[], 3);
+('Ethiopian CyberShield 2026', 'Participant - Hack. Hunt. Harden.', 'Competition', 'security', 'Sep 17 - 20, 2026', 'Addis Ababa, Ethiopia', 'Four-day national cybersecurity event hosted by ALX Ethiopia, SecureLabs, Yekolo Temari and Gundan.', ARRAY['Hands-on system hardening across all four days', 'Red Team attack challenges', 'Incident response exercises']::TEXT[], 2),
+('CodeAlpha', 'Cybersecurity Intern', 'Internship', 'security', '2026 (project-based)', 'Remote', 'Project-based cybersecurity internship with practical, documented tasks.', ARRAY['Built a Python network packet sniffer with Scapy to capture and inspect live traffic', 'Performed a secure code review of a Flask app, finding SQL injection, XSS, hardcoded credentials and insecure deserialization with manual review and Bandit (SAST)', 'Documented findings and secure-coding fixes on GitHub']::TEXT[], 3),
+('Information Network Security Administration (INSA)', '4th Cyber Talent Summer Camp - Challenge Participant', 'Program', 'security', 'Summer 2025', 'Addis Ababa, Ethiopia', 'National cybersecurity talent program run by INSA in collaboration with AASTU.', ARRAY['Worked through offensive and defensive security challenges in lab environments', 'Final project: a Python/Flask web vulnerability scanner for automated testing and reporting']::TEXT[], 4);
 
 DELETE FROM projects;
 INSERT INTO projects (title, description, technologies, project_url, github_url, featured, category, sort_order) VALUES
@@ -105,7 +106,7 @@ UPDATE certificates SET title = 'Graphic Design', issuing_organization = 'Berhan
   WHERE certificate_image_url LIKE '%/berhanena-selam.jpg';
 
 INSERT INTO certificates (title, issuing_organization, issue_date, credential_url, certificate_image_url, sort_order)
-SELECT 'Ethiopia Cyber Shield 2026 - Intensive CTF', 'Ethiopia Cyber Shield 2026', 'Certificate pending', NULL, NULL, 2
-WHERE NOT EXISTS (SELECT 1 FROM certificates WHERE title = 'Ethiopia Cyber Shield 2026 - Intensive CTF');
+SELECT 'Ethiopian CyberShield 2026', 'ALX Ethiopia, SecureLabs, Yekolo Temari & Gundan', 'September 2026', NULL, '/certificates/ethiopian-cybershield-2026.jpg', 2
+WHERE NOT EXISTS (SELECT 1 FROM certificates WHERE title = 'Ethiopian CyberShield 2026');
 
 COMMIT;
